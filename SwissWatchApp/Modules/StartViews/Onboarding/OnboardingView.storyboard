@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NdV-Fp-nRi">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--OnboardingView-->
+        <scene sceneID="GQR-ab-NfJ">
+            <objects>
+                <viewController title="OnboardingView" id="NdV-Fp-nRi" customClass="OnboardingView" customModule="SwissWatchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xSd-hO-6Wo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="38L-BV-QKk" userLabel="MainContainer">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U26-0s-URf" userLabel="CenterContainer">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <subviews>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="black" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iB-gi-DFL">
+                                                <rect key="frame" x="0.0" y="8" width="414" height="810"/>
+                                                <viewLayoutGuide key="contentLayoutGuide" id="405-D6-C1H"/>
+                                                <viewLayoutGuide key="frameLayoutGuide" id="hg5-uZ-Q5E"/>
+                                            </scrollView>
+                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="K9t-2a-GjY">
+                                                <rect key="frame" x="187.5" y="781" width="39" height="37"/>
+                                                <color key="pageIndicatorTintColor" white="0.0" alpha="0.2049680897887324" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </pageControl>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="9iB-gi-DFL" secondAttribute="trailing" id="0k3-ii-eTZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="9iB-gi-DFL" secondAttribute="bottom" id="EAq-sB-v5U"/>
+                                            <constraint firstItem="K9t-2a-GjY" firstAttribute="centerX" secondItem="U26-0s-URf" secondAttribute="centerX" id="VDG-HD-mK0"/>
+                                            <constraint firstItem="9iB-gi-DFL" firstAttribute="top" secondItem="U26-0s-URf" secondAttribute="top" id="fmr-Zf-kAN"/>
+                                            <constraint firstAttribute="bottom" secondItem="K9t-2a-GjY" secondAttribute="bottom" id="iwb-j1-nrR"/>
+                                            <constraint firstItem="9iB-gi-DFL" firstAttribute="leading" secondItem="U26-0s-URf" secondAttribute="leading" id="vPc-kB-xZb"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="U26-0s-URf" firstAttribute="top" secondItem="38L-BV-QKk" secondAttribute="top" id="6Bh-9t-5f4"/>
+                                    <constraint firstAttribute="bottom" secondItem="U26-0s-URf" secondAttribute="bottom" id="QHc-hS-5JK"/>
+                                    <constraint firstAttribute="trailing" secondItem="U26-0s-URf" secondAttribute="trailing" id="uqL-mD-de4"/>
+                                    <constraint firstItem="U26-0s-URf" firstAttribute="leading" secondItem="38L-BV-QKk" secondAttribute="leading" id="uzd-je-SND"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="38L-BV-QKk" firstAttribute="leading" secondItem="TyT-40-GCz" secondAttribute="leading" id="CPC-5A-l2Y"/>
+                            <constraint firstItem="TyT-40-GCz" firstAttribute="bottom" secondItem="38L-BV-QKk" secondAttribute="bottom" id="MMY-kn-D8e"/>
+                            <constraint firstItem="TyT-40-GCz" firstAttribute="trailing" secondItem="38L-BV-QKk" secondAttribute="trailing" id="SB6-lS-VTS"/>
+                            <constraint firstItem="38L-BV-QKk" firstAttribute="top" secondItem="TyT-40-GCz" secondAttribute="top" id="X1g-lI-1ru"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TyT-40-GCz"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="K9t-2a-GjY" id="xEj-eL-OZY"/>
+                        <outlet property="scroll" destination="9iB-gi-DFL" id="D8W-sP-Wtq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b9K-6M-wC2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="227.536231884058" y="231.69642857142856"/>
+        </scene>
+    </scenes>
+</document>

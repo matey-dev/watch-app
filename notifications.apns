@@ -1,0 +1,9 @@
+{
+  "aps": {
+    "alert": "This is test apn", 
+    "content-available": 1, 
+    "category": "Lot"
+    },
+  "yourCustomKey": "1",
+  "lot_id": 56
+}

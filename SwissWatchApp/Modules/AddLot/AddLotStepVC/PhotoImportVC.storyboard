@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Sc-vl-KqQ">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Photo ImportVC-->
+        <scene sceneID="Hzv-Qg-nGV">
+            <objects>
+                <viewController id="8Sc-vl-KqQ" customClass="PhotoImportVC" customModule="Watch_Value" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VWB-rD-WKs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nlI-46-CcM">
+                                <rect key="frame" x="0.0" y="44" width="375" height="190"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlI-0q-fx2">
+                                        <rect key="frame" x="16" y="59" width="343" height="58"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="58" id="7DD-Uq-h8t"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="18"/>
+                                        <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Take photo" image="camera">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapBtnWithSender:" destination="8Sc-vl-KqQ" eventType="touchUpInside" id="L0G-dK-18N"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FnC-xp-cZW">
+                                        <rect key="frame" x="16" y="0.0" width="343" height="58"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="58" id="Sf9-vE-ncm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="18"/>
+                                        <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Choose photo" image="image_placeholder">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapBtnWithSender:" destination="8Sc-vl-KqQ" eventType="touchUpInside" id="Lve-uu-5Si"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f9j-IN-v4h">
+                                        <rect key="frame" x="0.0" y="117" width="375" height="62"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bd-FD-E1H">
+                                                <rect key="frame" x="16" y="5" width="343" height="46"/>
+                                                <color key="backgroundColor" name="blackColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="GvB-Hg-hcb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="18"/>
+                                                <state key="normal" title="Cancel">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="didTapBtnWithSender:" destination="8Sc-vl-KqQ" eventType="touchUpInside" id="wWY-O2-DkZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="5bd-FD-E1H" firstAttribute="leading" secondItem="f9j-IN-v4h" secondAttribute="leading" constant="16" id="M1a-f9-eAk"/>
+                                            <constraint firstAttribute="bottom" secondItem="5bd-FD-E1H" secondAttribute="bottom" constant="11" id="Xy8-rr-Ouj"/>
+                                            <constraint firstItem="5bd-FD-E1H" firstAttribute="top" secondItem="f9j-IN-v4h" secondAttribute="top" constant="5" id="fpB-VN-Omh"/>
+                                            <constraint firstAttribute="trailing" secondItem="5bd-FD-E1H" secondAttribute="trailing" constant="16" id="gau-Ua-VMt"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K5V-bv-FOM">
+                                        <rect key="frame" x="16" y="58" width="343" height="1"/>
+                                        <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="Vt1-Li-ve0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="FnC-xp-cZW" firstAttribute="top" secondItem="nlI-46-CcM" secondAttribute="top" id="36x-kW-EVX"/>
+                                    <constraint firstAttribute="bottom" secondItem="f9j-IN-v4h" secondAttribute="bottom" constant="11" id="H2Y-p0-Uts"/>
+                                    <constraint firstAttribute="trailing" secondItem="K5V-bv-FOM" secondAttribute="trailing" constant="16" id="KDH-03-mlW"/>
+                                    <constraint firstAttribute="trailing" secondItem="f9j-IN-v4h" secondAttribute="trailing" id="KgN-Dk-067"/>
+                                    <constraint firstAttribute="trailing" secondItem="hlI-0q-fx2" secondAttribute="trailing" constant="16" id="PkL-Cc-Qls"/>
+                                    <constraint firstItem="hlI-0q-fx2" firstAttribute="top" secondItem="K5V-bv-FOM" secondAttribute="bottom" id="TV4-fF-7on"/>
+                                    <constraint firstItem="FnC-xp-cZW" firstAttribute="leading" secondItem="nlI-46-CcM" secondAttribute="leading" constant="16" id="Zyv-cA-YEM"/>
+                                    <constraint firstItem="hlI-0q-fx2" firstAttribute="leading" secondItem="nlI-46-CcM" secondAttribute="leading" constant="16" id="bWU-iJ-jjN"/>
+                                    <constraint firstItem="K5V-bv-FOM" firstAttribute="leading" secondItem="nlI-46-CcM" secondAttribute="leading" constant="16" id="brT-N8-Ubt"/>
+                                    <constraint firstItem="K5V-bv-FOM" firstAttribute="top" secondItem="FnC-xp-cZW" secondAttribute="bottom" id="cfK-wJ-Xgy"/>
+                                    <constraint firstAttribute="trailing" secondItem="FnC-xp-cZW" secondAttribute="trailing" constant="16" id="jBo-tQ-Cd2"/>
+                                    <constraint firstItem="f9j-IN-v4h" firstAttribute="leading" secondItem="nlI-46-CcM" secondAttribute="leading" id="kiH-ID-fhp"/>
+                                    <constraint firstItem="f9j-IN-v4h" firstAttribute="top" secondItem="hlI-0q-fx2" secondAttribute="bottom" id="z3p-c8-TTE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5V3-1n-rcy"/>
+                        <color key="backgroundColor" red="0.062745098039215685" green="0.11764705882352941" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nlI-46-CcM" firstAttribute="top" secondItem="5V3-1n-rcy" secondAttribute="top" id="RPr-LT-lTA"/>
+                            <constraint firstItem="nlI-46-CcM" firstAttribute="leading" secondItem="5V3-1n-rcy" secondAttribute="leading" id="Uvi-Ps-Kqb"/>
+                            <constraint firstItem="nlI-46-CcM" firstAttribute="trailing" secondItem="5V3-1n-rcy" secondAttribute="trailing" id="n5w-4x-JeP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraBtn" destination="hlI-0q-fx2" id="or1-az-Exs"/>
+                        <outlet property="containerView" destination="nlI-46-CcM" id="REP-ib-d0U"/>
+                        <outlet property="libraryBtn" destination="FnC-xp-cZW" id="XbT-7r-3AD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pCI-Xu-H6C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.6956521739130448" y="-98.4375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera" width="24" height="24"/>
+        <image name="image_placeholder" width="24" height="24"/>
+        <namedColor name="blackColor">
+            <color red="0.062745098039215685" green="0.11764705882352941" blue="0.16078431372549021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

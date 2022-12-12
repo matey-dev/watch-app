@@ -1,0 +1,85 @@
+PODS:
+  - Alamofire (4.9.1)
+  - CHIPageControl/Jaloro (0.2)
+  - Crashlytics (3.14.0):
+    - Fabric (~> 1.10.2)
+  - Fabric (1.10.2)
+  - Hero (1.5.0)
+  - iCarousel (1.8.3)
+  - ImageViewer (6.0.0)
+  - IQKeyboardManagerSwift (6.5.6)
+  - JXPageControl (0.1.3):
+    - JXPageControl/Common (= 0.1.3)
+    - JXPageControl/Jump (= 0.1.3)
+    - JXPageControl/Transform (= 0.1.3)
+  - JXPageControl/Common (0.1.3)
+  - JXPageControl/Jump (0.1.3):
+    - JXPageControl/Common
+  - JXPageControl/Transform (0.1.3):
+    - JXPageControl/Common
+  - Kingfisher (6.0.1)
+  - KMPlaceholderTextView (1.4.0)
+  - Loaf (0.7.0)
+  - MagazineLayout (1.6.3)
+  - MGSwipeTableCell (1.6.11)
+  - SnapKit (5.0.1)
+  - Sourcery (1.0.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.9.0)
+  - CHIPageControl/Jaloro
+  - Crashlytics
+  - Fabric
+  - Hero
+  - iCarousel
+  - ImageViewer
+  - IQKeyboardManagerSwift
+  - JXPageControl
+  - Kingfisher
+  - KMPlaceholderTextView
+  - Loaf
+  - MagazineLayout
+  - MGSwipeTableCell
+  - SnapKit
+  - Sourcery
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CHIPageControl
+    - Crashlytics
+    - Fabric
+    - Hero
+    - iCarousel
+    - ImageViewer
+    - IQKeyboardManagerSwift
+    - JXPageControl
+    - Kingfisher
+    - KMPlaceholderTextView
+    - Loaf
+    - MagazineLayout
+    - MGSwipeTableCell
+    - SnapKit
+    - Sourcery
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  CHIPageControl: a787bf7205c9b7e7fbfc412be36c5e8636b68f86
+  Crashlytics: 9220f5bc89e7a618df411b4f639389dbfb0e03d2
+  Fabric: ea977e3cd9c20425516d3dafd3bf8c941c51223f
+  Hero: b7385b75e7259da62f4f85462f59a5082d66b058
+  iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
+  ImageViewer: cb88ef1c0ba19161bc10702adfdcebc116a7a59d
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  JXPageControl: eea52838699a4949063e600b25eb9e8b6e20ae3f
+  Kingfisher: adde87a4f74f6a3845395769354efff593581740
+  KMPlaceholderTextView: 2206c3df39979e9396e2d96fa9f427a8951121b0
+  Loaf: d69937cd00649f3fa260beb8b7aef0a1feb861ef
+  MagazineLayout: 159da0d4d874e04e6b17e580b990cccd00328c5b
+  MGSwipeTableCell: b804e4e450dee439c42250be90bd50458bf67fce
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Sourcery: e8951e8759ef6a3a0cce412db64832dd23343041
+
+PODFILE CHECKSUM: 08b1027f4362dcacf29ba78d022d2ee492fdc6c4
+
+COCOAPODS: 1.10.0
